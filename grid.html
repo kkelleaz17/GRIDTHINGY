@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+  * {
+    animation:kris infinite 10s linear;
+  }  
+  body{
+      margin: 0px;
+      display: grid;
+      grid-template-columns: repeat(8,100px);
+      grid-template-rows: 100px 300px 100px;
+      font-family: 'Roboto', sans-serif;
+      height: 100vh;
+      align-content: center;
+      justify-content: center;
+      transition: .1s;
+    }
+    body div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 90px;
+    }
+    .BOX1{
+      grid-row: 1 /span 1;
+      grid-column: 1 /span 8;
+      background-color: red;
+      animation-delay:1s;
+    }
+    .BOX2{
+      grid-row: 2 /span 2;
+      grid-column: 1 /span 1;
+      background-color: rgb(30, 63, 183);
+      animation-delay:2s;
+    }
+    .BOX3{
+      grid-row: 3 /span 1;
+      grid-column: 2 /span 7;
+      background-color: rgb(107, 28, 210);
+      animation-delay:3s;
+    }
+    .BOX4 img,.BOX2 img{
+      width: 100%;
+      height: 100%;
+    }
+    .BOX4{
+      grid-row: 2 /span 1;
+      grid-column: 2 /span 4;
+      background-color: rgb(49, 227, 10);
+      animation-delay:4s;
+    }
+    .BOX5{
+      grid-row: 2 /span 1;
+      grid-column: 6 /span 3;
+      background-color: rgb(234, 246, 16);
+      animation-delay:5s;
+    }
+    @keyframes kris {
+      0% {background:red}
+      15% {background:orange}
+      30% {background:yellow}
+      45% {background:yellowgreen}
+      60% {background:green}
+      75% {background:blue}
+      90% {background:violet}
+      100% {background:red}
+    }
+</style>
+<body>
+  <div class="BOX1">Jayden Birthday</div>
+  <div class="BOX2"><img src="https://previews.123rf.com/images/yayayoy/yayayoy1609/yayayoy160900007/64036800-surprised-shocked-scared-or-astonished-emoticon-with-wild-take-eyes-popping-out-and-jaw-dropping.jpg"></div>
+  <div class="BOX3" style="font-size:20px;">i don wana celebrt ma birday enmore</div>
+  <div class="BOX4"><img src="data:image/jpeg;base64,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"></div>
+  <div class="BOX5">&#60;---</div>
+  hakaer
+</body>
+<script>
+  //https://previews.123rf.com/images/yayayoy/yayayoy1609/yayayoy160900007/64036800-surprised-shocked-scared-or-astonished-emoticon-with-wild-take-eyes-popping-out-and-jaw-dropping.jpg
+  window.open('https://media.tenor.com/F2hvezp1-SoAAAAC/soggy-cat-soggy-cat-jumpscare.gif','_blank');
+  </script>
+</html>
